@@ -40,13 +40,14 @@ var loadDoc = function() {
 function myFunction( xml ) {
 	var i;
 	var xmlDoc = $.parseXML(xml);
-	var table="<tr><th>Artista</th><th>Titulo</th><th>Titulo</th></tr>";
+	var table="<tr><th>Artista</th><th>Titulo</th><th>Discográfica</th></tr>";
 	$("#demo").empty();
 
 	$xml = $( xmlDoc );
 	$(xml).find("CD").each(function() {
-		table += "<tr><td>" + $(this).find("ARTIST").text() + "</td><td>" + 
-		$(this).find("TITLE").text() + "</td></tr>";
+		table += "<tr><td>" + $(this).find("ARTIST").text() + 
+		"</td><td>" + $(this).find("TITLE").text() + 
+		"</td><td>" + $(this).find("COMPANY").text() + "</td></tr>";
 	});
 	$("#demo").html(table);
 }
