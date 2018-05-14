@@ -45,9 +45,8 @@ function myFunction( xml ) {
 
 	$xml = $( xmlDoc );
 	$(xml).find("CD").each(function() {
-		table += "<tr><td>" + $(this).find("ARTIST").text() + 
-		"</td><td>" + $(this).find("TITLE").text() + 
-		"</td><td>" + $(this).find("COMPANY").text() + "</td></tr>";
+		table += "<tr><td>" + $(this).find("ARTIST").text() + "</td><td>" + 
+		$(this).find("TITLE").text() + "</td><td>" + $(this).find("COMPANY").text() + "</td></tr>";
 	});
 	$("#demo").html(table);
 }
