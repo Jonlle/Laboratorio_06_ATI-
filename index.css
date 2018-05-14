@@ -11,8 +11,8 @@ th, td {
 tr:nth-child(even){background-color: #f2f2f2}
 
 th {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #BDE5F8;
+    color: #00529B;
 }
 
 .btn {
@@ -29,6 +29,7 @@ th {
     cursor: pointer;
 }
 
-h2{
+h2,p {
     color: #00529B;
 }
+
