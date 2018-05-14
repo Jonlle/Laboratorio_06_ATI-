@@ -4,9 +4,6 @@ $(function() {
 
 $(document).ajaxError(function(e, jqXHR, settings, exception) {
 	switch (jqXHR.status) {
-		case 0:
-			alert("404 Page Not Found");
-	        break;
 	    case 200:
 	        alert("200 OK!");
 	        break;
@@ -43,7 +40,7 @@ var loadDoc = function() {
 function myFunction( xml ) {
 	var i;
 	var xmlDoc = $.parseXML(xml);
-	var table="<tr><th>Artista</th><th>Titulo</th></tr>";
+	var table="<tr><th>Artista</th><th>Titulo</th><th>Titulo</th></tr>";
 	$("#demo").empty();
 
 	$xml = $( xmlDoc );
