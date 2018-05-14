@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function() {
 	$("#butt").click(loadDoc);
 });
 
