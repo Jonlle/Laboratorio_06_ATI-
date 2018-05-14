@@ -16,9 +16,10 @@ th {
 }
 
 .btn {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
+    background-color: #DFF2BF;
+    border: 1px solid;
+    border-radius:.5em;
+    color: #4F8A10;
     padding: 12px 30px;
     text-align: center;
     text-decoration: none;
